@@ -87,11 +87,15 @@ all_id_dat_risk = pd.merge(all_id, dat_risk, on='id', how='inner')
 对于每一个id，我们可以得到该id是否包含`一级`分类、`二级`分类、`一二级`分类的每一个类别，可以得到一个长度为`24 + 30 + 44 = 98`的向量，且该向量的每一个元素都是0或者1。
 数据格式如下：除了id该列之外，应该还有98列。
 
-<div align=center>
+<center>
 
-![](/picture/2.png)
+|id|酒店|法律|信用卡|...|
+|---|---|---|---|---|
+|22240|0|0|1|$\cdots$|
+|28728|0|0|0|...|
+|$\vdots$|0|1|0|...|
 
-</div>
+</center>
 
 把最终处理得到的数据记为`dat_symbol_dummy`，该数据的维度为 `2266640 * 99`（`99`的原因是还加了一列`id`）。
 把`all_id`和`dat_symbol_dummy`进行内连接，得到`all_id_dat_symbol_dummy`:
@@ -483,10 +487,10 @@ np.sum(right_son['weight'])
 :------: | :------: | :------: | :------: 
 all_id_dat_risk	|用户风险行为数据，可以直接使用|	18.4%|	0.543
 all_id_dat_symbol	|用户分类数据，一共28个特征|	93.2%|	0.545
-all_id_dat_app	|用户安装app情况，66个特征|	69.9%|	0.655
+all_id_dat_app	|用户安装`app`情况，66个特征|	69.9%|	0.655
 all_id_dat_edge	|用户关联数据，一共173个特征|	17.9%|	0.637
 all_id_centrality_df	|根据用户关联图计算出的用户特征，一共11个特征|	17.85%|	0.585
-all_id_cluster	|利用louvain社区聚类得到的结果，一共82个特征|	1.8%|	0.556
+all_id_cluster	|利用`louvain`社区聚类得到的结果，一共82个特征|	1.8%|	0.556
 one_step_label	|一度联系人的标签信息，一共12个特征|	99.4%|	0.608
 two_step_label	|二度联系人的标签信息，一共22个特征|	17.1%|	0.602
 one_spread_label	|考虑了联系方向一度路由的标签信息，一共16个特征|	71.4%|	0.625
