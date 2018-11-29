@@ -1,5 +1,10 @@
 算法文档
 ===========================
+
+![](https://img.shields.io/badge/author-dongfan-red.svg)
+![](https://img.shields.io/badge/spnsors-irootech_AI_lab-darkgreen.svg)
+![](https://img.shields.io/badge/license-MIT-blue.svg)
+
 ## 目录
 * [问题描述](#问题描述)
 * [特征提取](#特征提取)
@@ -36,6 +41,7 @@
 
 
 
+
 ## 问题描述
 在这里说明是为了达成共识，同时也是为了统一符号表示，后面的讲解都以此为基础。
 关于用户特征的数据分为四部分（按照处理的难易程度排序，从易到难）: 
@@ -50,10 +56,14 @@
 * （2）`valid_id`(一列: `id`)
 * （3）`test_id`(一列: `id`)
 
-把sample_train、valid_id、test_id的id拼接起来，得到所有的id，数据名称记为all_id，数据格式为一个28959*1的DataFrame.
+把`sample_train`、`valid_id`、`test_id`的`id`拼接起来，得到所有的`id`，数据名称记为`all_id`，
+数据格式为一个`28959*1`的`DataFrame`.
 
 ## 特征提取
 ### dat_risk
+
+输出为`all_id_dat_risk`
+
 把`dat_risk`和`all_id`进行内连接:
 
 ```python
