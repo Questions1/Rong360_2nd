@@ -595,6 +595,8 @@ if __name__ == '__main__':
     sample_dat_risk = pd.merge(all_id[['id']], dat_risk.drop('a_cnt', axis=1), on='id', how="inner")
 
     # 把清洗后的数据输出，在下一个文件feature_engineer.py里进行特征工程
+    if 'output' not in os.listdir('./'):
+        os.makedirs('output')
     all_id.to_csv('./output/sample_valid.csv', index=False)
     df_feature_18.to_csv('./output/df_feature_18.csv', index=False)
     sample_dat_risk.to_csv('./output/sample_dat_risk.csv', index=False)

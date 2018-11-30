@@ -6,6 +6,9 @@
 ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## 目录
+* [比赛背景](#比赛背景)
+* [最终成绩](#最终成绩)
+* [代码组织方式及执行顺序](#代码组织方式及执行顺序)
 * [问题描述](#问题描述)
 * [特征提取](#特征提取)
     * [dat_risk](#dat_risk)
@@ -40,7 +43,49 @@
 * [改进空间](#改进空间)
 
 
+### 比赛背景
+ <a href='http://openresearch.rong360.com/#/introduce'>参见比赛官网</a>
 
+### 最终成绩
+
+<div align=center>
+
+![](/picture/20.png)
+
+</div>
+
+### 代码组织方式及执行顺序
+
+```
+project
+|
+|----数据预处理及特征提取
+|           1.data_preprocess.py
+|           2.handle_dat_edge.py
+|           3.spread_dect.py
+|           4.Louvain.py
+|----特征选择
+|           5.select_symbol.py
+|           6.select_app.py
+|           7.select_cluster.py
+|           8.select_feature_18.py
+|----图特征提取
+|           9.igraph.py
+|----标签传播
+|           10.one_step_label.py
+|           11.two_step_label.py
+|           12.one_spread_label.py
+|----特征传播
+|           13.in_server.ipynb
+|           14.one_step_app.py
+|           15.one_step_symbol.py
+|           16.one_step_feature_agg.py
+|           17.one_step_many_features.ipynb
+|----最后的特征工程
+|           18.feature_engineer.py
+|----调参
+|           19.params_tuning_2.ipynb
+```
 
 ## 问题描述
 在这里说明是为了达成共识，同时也是为了统一符号表示，后面的讲解都以此为基础。
