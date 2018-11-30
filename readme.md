@@ -6,9 +6,11 @@
 ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## 目录
-* [比赛背景](#比赛背景)
-* [最终成绩](#最终成绩)
-* [代码组织方式及执行顺序](#代码组织方式及执行顺序)
+* [关于比赛](#关于比赛)
+    * [比赛背景](#比赛背景)
+    * [最终成绩](#最终成绩)
+    * [数据集下载](#数据集下载)
+    * [代码组织方式及执行顺序](#代码组织方式及执行顺序)
 * [问题描述](#问题描述)
 * [特征提取](#特征提取)
     * [dat_risk](#dat_risk)
@@ -42,6 +44,7 @@
 * [测试集AUC下滑之谜](#测试集AUC下滑之谜)
 * [改进空间](#改进空间)
 
+## 关于比赛
 
 ### 比赛背景
  <a href='http://openresearch.rong360.com/#/introduce'>参见比赛官网</a>
@@ -53,6 +56,12 @@
 ![](/picture/20.png)
 
 </div>
+
+### 数据集下载
+
+链接：<a href='https://pan.baidu.com/s/1idFnZW5MnkeMHGCMfsYomQ'>https://pan.baidu.com/s/1idFnZW5MnkeMHGCMfsYomQ</a>
+
+提取码：dbka 
 
 ### 代码组织方式及执行顺序
 
