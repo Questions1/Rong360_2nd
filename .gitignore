@@ -2,6 +2,7 @@
 open_data
 *.ipynb_checkpoints
 output
+beamer
 experiment.py
 threadpool.py
 time_gadget.py
