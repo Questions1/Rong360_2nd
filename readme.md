@@ -2,7 +2,7 @@
 ===========================
 
 ![](https://img.shields.io/badge/author-dongfan-red.svg)
-![](https://img.shields.io/badge/spnsors-irootech_AI_lab-darkgreen.svg)
+![](https://img.shields.io/badge/sponsors-irootech_AI_lab-darkgreen.svg)
 ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## 目录
