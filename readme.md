@@ -4,7 +4,7 @@
 ![](https://img.shields.io/badge/author-dongfan-red.svg)
 ![](https://img.shields.io/badge/sponsors-irootech_AI_lab-darkgreen.svg)
 ![](https://img.shields.io/badge/license-MIT-blue.svg)
-![](https://img.shields.io/badge/link-996.icu-red.svg)
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 ## 目录
 * [关于比赛](#关于比赛)
